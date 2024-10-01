@@ -1,0 +1,110 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+img {
+  width: 400px;
+  height: 280px;
+}
+
+body {
+  padding: 70px;
+  background-color: rgb(244, 162, 216);
+}
+
+.photo-card {
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  display: block;
+  max-width: 400px;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: #fff;
+  padding: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.info :not(:last-child) {
+  margin-right: 40px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  opacity: 0.5;
+}
+
+.load-button {
+  color: rgb(244, 162, 216);
+  border-radius: 4px;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  display: block;
+  margin: 20px auto;
+}
+
+input {
+  width: 200px;
+  border: 3px solid rgb(244, 162, 216);
+  background: transparent;
+  padding: 3px 20px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  color: rgb(244, 162, 216);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(244, 162, 216);
+  font-family: Roboto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.search-form button {
+  border: none;
+  background: rgb(244, 162, 216);
+  color: white;
+  border-radius: 4px;
+  width: 60px;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
