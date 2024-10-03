@@ -22,7 +22,7 @@ function ButVisibility(isVisible) {
 ButVisibility(false);
 form.addEventListener('submit', async function (event) {
   event.preventDefault();
-
+  
   const searchTerm = event.target.elements.searchQuery.value.trim();
 
   fetchApi.search = searchTerm;
@@ -31,6 +31,7 @@ form.addEventListener('submit', async function (event) {
   loadHits = 0;
   firstSearch = true;
   clearGallery();
+  ButVisibility(false);
   loadcards();
 });
 
@@ -52,7 +53,7 @@ async function loadcards() {
         firstSearch = false;
       }
       markup(resp.hits);
-      ButVisibility(true);
+    
       loadHits += resp.hits.length;
 
       const { height: сardHeight } = document
